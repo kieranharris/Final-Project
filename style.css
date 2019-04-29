@@ -1,0 +1,477 @@
+img {
+  max-width:100%;
+}
+
+body {
+  font-family: Verdana;
+  background: linear-gradient(to right, lightgreen, teal);
+  margin:0;
+}
+    
+header {
+  grid-area:header;
+  background:rgba(0,0,0,.2);
+  padding:5px;
+  text-align:center;
+ }
+
+header h1 {
+  font-size:5vw;
+  color:mediumspringgreen;
+  font-family:Impact;
+  text-shadow: 2px 2px 5px navy;
+  margin: 0;
+}
+
+header h3 {
+  font-size:2vw;
+  color:navy;
+  margin:0;
+}
+
+nav {
+  grid-area:nav;
+  background:rgba(0,0,0,.2);
+}
+    
+nav ul {
+  padding:10px;
+  margin:0;
+}
+
+nav li {
+  padding:10px 10px;
+  list-style-type:none;
+  font-size:1.5em;
+  font-weight:bold;
+}
+
+nav a {
+  text-decoration:none;
+  color:navy;
+}
+
+a:hover {
+  color:white;
+}
+
+main {
+  grid-area:main;
+  background:rgba(0,0,0,.2);
+  padding:5px;
+}
+
+main h2 {
+  text-align:center;
+  color:navy;
+  margin:1%;
+}
+
+main p {
+  color:white;
+  padding:1% 2%;
+  font-size:1em;
+}
+
+aside{
+grid-area: aside;
+background: rgba(0,0,0,.2);
+padding: 10px;
+}
+
+aside li{
+color: navy;
+padding: 10px 0;
+}
+
+aside a{
+color: white;
+}
+
+aside a:hover{
+color: navy;
+}
+
+aside h2{
+text-align: center;
+color: navy;
+padding: 10px 0;
+}
+
+article {
+ background:rgba(0,0,0,.2);
+ padding:5px;
+}
+
+article h2 {
+  text-align:center;
+  color:navy;
+  margin:1%;
+}
+
+article p {
+  color:white;
+  padding:1% 2%;
+  font-size:1em;
+}
+	
+.top {
+grid-area: top;
+}
+
+.middle {
+grid-area: middle;
+}
+
+.bottom {
+grid-area: bottom;
+}
+	
+footer {
+  grid-area:footer;
+  background:rgba(0,0,0,.2);
+  padding:5px;
+  text-align:center;
+}
+
+footer p {
+  font-size:1em;
+  color:white;
+  margin:0;
+}
+
+.travelpic{
+margin: auto;
+}
+
+section{
+grid-area:section;
+}
+
+.fig1{
+grid-area:fig1;
+background:rgba(0,0,0,.2);
+}
+
+.fig2{
+grid-area:fig2;
+background:rgba(0,0,0,.2);
+}
+
+figure{
+margin: 0;
+text-align: center;	
+}
+
+figcaption{
+padding: 5px;
+color: navy;
+font-weight: bold;
+}
+
+figure img{
+padding-top: 10px;
+}
+
+audio {
+ max-width: 100%; 
+ margin: auto;
+}
+video { 
+  max-width:  100%;
+  height:auto;
+  margin: auto;
+}
+
+.video, .audio {
+    margin:0;
+    display: grid;  /*This needs to be set or it won't center*/
+    justify-content:space-around;
+}
+
+input {
+  margin: 1px 0 10px 0;
+}
+
+.call {
+    color:navy;
+    text-align:center;
+    font-size:2em;
+    background-color:darkseagreen;
+    width:60%;
+    padding: 5px 0 0 0;
+    margin:10px auto 0 auto;
+    cursor: pointer;
+}
+
+.phone{
+    color:darkseagreen;
+    background-color:navy;
+    padding:5px;
+    text-align:center;
+    font-size:.75em;
+    display: none;
+}
+
+.shadow{
+    box-shadow: 10px 10px 5px #888888;
+}
+
+.div1{
+grid-area: div1;
+color: rgba(0,0,0,.2);
+}
+
+.div2{
+grid-area: div2;
+color: rgba(0,0,0,.2);
+}
+
+form{
+    background-color:darkseagreen;
+    width:90%;
+    margin:auto;
+    color:white;
+    padding:10px;
+}
+
+.button{
+padding: 5px;
+color: lightseagreen;
+background: navy;
+cursor: pointer;
+}
+
+
+
+
+/*---------------------------Mobile Layout Styles----------------------------*/
+.container1 { /*for index.html*/
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "aside"
+    "footer";   
+    }
+.container2 { /*for blog.html*/
+  display: grid;
+  grid-template-columns:100%;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "top"
+    "middle"
+    "bottom"
+    "footer";
+    }
+.container0{ /*for special.html*/
+  grid-template-columns:100%;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "fig2"
+    "footer";
+    }
+
+.nestedgrid{
+display: grid;
+grid-template-areas:
+"section"
+"fig 1";
+}
+
+.container4 { /*for destination.html*/
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";   
+    }
+
+.nestedgrid2{
+display: grid;
+grid-template-areas: 
+"div1"
+"div2";
+}
+
+/*This stuff is for the hamburger menu*/
+.toggleNav {
+    display:grid; /*This is what allows the hamburger icon and "Menu" to display*/
+    text-align:center;
+    font-size:1.5em;
+    font-weight:bold;
+    padding:10px;
+    }
+
+#flex-nav ul {
+    display: none; /*jQuery toggles the nav from to this class to the .open when clicked*/
+    text-align:center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+ 
+#flex-nav ul.open { /*.open is the class that gets toggled when clicked (with help from the jQuery code)*/
+    display:grid;
+    }
+    
+#flex-nav li {
+    padding-left:10px;
+    padding-top:10px;
+    }
+
+form {
+    background-color:darkseagreen;
+    width:90%;
+    margin:auto;
+    color:white;
+    padding:10px;
+}
+
+
+/*-----------------------Tablet Media Query------------------------*/
+@media only screen and (min-width: 480px)  {
+.container1 { /*for index.html*/
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "aside aside"
+    "footer footer";
+    }
+.container2 { /*for blog.html*/
+  display: grid;
+  grid-template-columns:auto 1fr;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "top top"
+    "middle middle"
+    "bottom bottom"
+    "footer footer";
+    }
+.container0{ /*for special.html*/
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "fig2 fig2"
+    "footer footer";
+    }
+.nestedgrid{
+display: grid;
+grid-template-areas:
+"section"
+"fig1";
+}
+
+	
+.container4 { /*for destination.html*/
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer";   
+    }
+	
+.nestedgrid2{
+display: grid;
+grid-template-areas: 
+"div1"
+"div2";
+}
+
+
+/* Below will change from hamburger menu to side navigation*/
+  
+.toggleNav {
+    display: none; /*Makes the hamburger icon with the word "Menu" to disappear at this screen size*/
+  }
+  
+#flex-nav ul {
+    display:grid;
+    text-align:left;
+  }
+
+#flex-nav li {
+    padding-left:10px;
+    padding-top:10px;
+  } 
+
+	}
+
+/*-----------------------Desktop Media Query------------------------*/
+@media only screen and (min-width: 960px)  {
+
+.container1 { /*for index.html*/
+  grid-template-columns: auto 1fr 25%;
+  grid-template-areas:
+    "header header header"
+    "nav main aside"
+    "footer footer footer";
+    }
+.container2 { /*for blog.html*/
+  display: grid;
+  grid-template-columns:auto 1fr 1.5fr;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header header header"
+    "nav main top"
+    "nav main middle"
+    "nav main bottom"
+    "footer footer footer";
+    }
+.container0{ /*for special.html*/
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "fig2 fig2"
+    "footer footer";
+    }
+.nestedgrid{
+display: grid;
+grid-template-areas:
+"section fig1";
+}
+
+	
+.container4 { /*for destination.html*/
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer";   
+    }
+
+.nestedgrid2{
+display: grid;
+grid-template-areas: 
+"div1 div2";
+}
+	
+
+	}
