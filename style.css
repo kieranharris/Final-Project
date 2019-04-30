@@ -17,15 +17,15 @@ header {
 
 header h1 {
   font-size:5vw;
-  color:mediumspringgreen;
-  font-family:Impact;
-  text-shadow: 2px 2px 5px navy;
+  color:red;
+  font-family:Verdana;
+  text-shadow: 2px 2px 5px black;
   margin: 0;
 }
 
 header h3 {
   font-size:2vw;
-  color:navy;
+  color:red;
   margin:0;
 }
 
