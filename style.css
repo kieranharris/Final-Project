@@ -165,7 +165,7 @@ text-align: center;
 
 figcaption{
 padding: 5px;
-color: navy;
+color: red;
 font-weight: bold;
 }
 
@@ -194,10 +194,10 @@ input {
 }
 
 .call {
-    color:navy;
+    color:red;
     text-align:center;
     font-size:2em;
-    background-color:darkseagreen;
+    background-color:black;
     width:60%;
     padding: 5px 0 0 0;
     margin:10px auto 0 auto;
@@ -205,8 +205,8 @@ input {
 }
 
 .phone{
-    color:darkseagreen;
-    background-color:navy;
+    color:black;
+    background-color:red;
     padding:5px;
     text-align:center;
     font-size:.75em;
@@ -237,8 +237,8 @@ form{
 
 .button{
 padding: 5px;
-color: lightseagreen;
-background: navy;
+color: red;
+background: black;
 cursor: pointer;
 }
 
