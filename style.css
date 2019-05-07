@@ -244,7 +244,7 @@ cursor: pointer;
 
 
 /*---------------------------Mobile Layout Styles----------------------------*/
-.container1 { /*for index.html*/
+.container1 { /*for home.html*/
   display: grid;
   grid-template-columns: 100%;
   grid-gap:.5em;
@@ -256,7 +256,7 @@ cursor: pointer;
     "aside"
     "footer";   
     }
-.container2 { /*for blog.html*/
+.container2 { /*for merchandise.html*/
   display: grid;
   grid-template-columns:100%;
   grid-gap:.5em;
@@ -270,7 +270,7 @@ cursor: pointer;
     "bottom"
     "footer";
     }
-.container0{ /*for special.html*/
+.container0{ /*for shows.html*/
   grid-template-columns:100%;
   grid-template-areas:
     "header"
@@ -287,7 +287,7 @@ grid-template-areas:
 "fig 1";
 }
 
-.container4 { /*for destination.html*/
+.container4 { /*for music.html*/
   display: grid;
   grid-template-columns: 100%;
   grid-gap:.5em;
@@ -343,7 +343,7 @@ form {
 
 /*-----------------------Tablet Media Query------------------------*/
 @media only screen and (min-width: 480px)  {
-.container1 { /*for index.html*/
+.container1 { /*for home.html*/
   grid-template-columns: auto 1fr;
   grid-template-areas:
     "header header"
@@ -351,7 +351,7 @@ form {
     "aside aside"
     "footer footer";
     }
-.container2 { /*for blog.html*/
+.container2 { /*for merchandise.html*/
   display: grid;
   grid-template-columns:auto 1fr;
   grid-gap:.5em;
@@ -364,7 +364,7 @@ form {
     "bottom bottom"
     "footer footer";
     }
-.container0{ /*for special.html*/
+.container0{ /*for shows.html*/
   grid-template-columns: auto 1fr;
   grid-template-areas:
     "header header"
@@ -380,7 +380,7 @@ grid-template-areas:
 }
 
 	
-.container4 { /*for destination.html*/
+.container4 { /*for music.html*/
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap:.5em;
@@ -420,14 +420,14 @@ grid-template-areas:
 /*-----------------------Desktop Media Query------------------------*/
 @media only screen and (min-width: 960px)  {
 
-.container1 { /*for index.html*/
+.container1 { /*for home.html*/
   grid-template-columns: auto 1fr 25%;
   grid-template-areas:
     "header header header"
     "nav main aside"
     "footer footer footer";
     }
-.container2 { /*for blog.html*/
+.container2 { /*for merchandise.html*/
   display: grid;
   grid-template-columns:auto 1fr 1.5fr;
   grid-gap:.5em;
@@ -439,7 +439,7 @@ grid-template-areas:
     "nav main bottom"
     "footer footer footer";
     }
-.container0{ /*for special.html*/
+.container0{ /*for shows.html*/
   grid-template-columns: auto 1fr;
   grid-template-areas:
     "header header"
@@ -454,7 +454,7 @@ grid-template-areas:
 }
 
 	
-.container4 { /*for destination.html*/
+.container4 { /*for music.html*/
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap:.5em;
